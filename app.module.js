@@ -22,11 +22,11 @@ AppModule = __decorate([
         imports: [
             typeorm_1.TypeOrmModule.forRoot({
                 type: 'postgres',
-                host: 'localhost',
+                host: 'uspldevazure-serverdb.postgres.database.azure.com',
                 port: 5432,
-                username: 'postgres',
-                password: 'postgres',
-                database: 'uspidevazure',
+                username: 'myadmin',
+                password: 'Az123456789',
+                database: 'uspldevazure-serverdb',
                 entities: [user_entity_1.User, post_entity_1.PostEntity],
                 synchronize: true,
                 autoLoadEntities: true,
